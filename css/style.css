@@ -102,7 +102,6 @@ img{
 .nav {
   display: flex;
   column-gap: 50px;
-  margin-left: 93px;
 }
 .contact {
   display: flex;
@@ -153,7 +152,9 @@ img{
 .nav-link.current {
   color: var(--accent-color);
 }
-
+.nav-box {
+  margin-left: 93px;
+}
 
 .contact-icon{
  fill: var(--main-text-color);
@@ -297,7 +298,7 @@ padding-bottom: 30px;
 .team-text {
   font-size: 16px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   color: var(--main-text-color);
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -400,6 +401,7 @@ fill: var(--main-light-color);
 line-height: 1.14;
 letter-spacing: 0.03em;
 color: var(--main-light-color);
+text-transform: uppercase;
 }
 .social-links{
 margin-left: 70px;
@@ -455,6 +457,7 @@ fill: var(--main-light-color);
 }
 .footer-conteiner{
   display: flex;
+  align-items: baseline
 }
 /* Портфолио btn */
 .btn-list {
@@ -489,6 +492,9 @@ box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   line-height: 1.875;
   letter-spacing: 0.03em;
 }
+.example-card-link{
+  display: block;
+}
 .btn-primary-type {
   min-width: 216px;
   padding: 10px 32px;
@@ -497,12 +503,13 @@ box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.6;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  border: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 .btn-secondary-type {
   padding: 6px 22px;
